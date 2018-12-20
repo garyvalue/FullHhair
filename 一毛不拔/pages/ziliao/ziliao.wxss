@@ -1,0 +1,34 @@
+/* pages/ziliao/ziliao.wxss */
+.radio-group{
+display: flex;
+align-items: center;
+margin-right: 120px;
+margin-top: 10px;
+}
+.text{
+  color: rgb(54,140,114);
+  font-size: 40px;
+  margin-left:120px;
+    margin-top: 150px;
+}
+.radio{
+  margin-top: 30px;
+  margin-left: 120px;
+  font-size: 25px;
+  color: rgb(70,101,81)
+}
+.button{
+margin-top: 50px;
+font-size: 20px;
+
+  width: 60%;
+
+  background-color: rgb(116,180,155);
+
+  color:white;
+
+  border-radius: 98rpx;
+
+  background: bg_red;
+
+}

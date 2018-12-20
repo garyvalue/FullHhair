@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ziliao/ziliao",
+    "pages/nv/nv",
+    "pages/nan/nan",
+    "pages/water/water",
+    "pages/introduce-water/introduction-water",
+    "pages/start/start",
+    "pages/fazhi/fazhi",
+    "pages/result/result",
+    "pages/new2/new2",
+    "pages/new3/new3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

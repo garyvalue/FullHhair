@@ -1,0 +1,5 @@
+<!--pages/introduce-water/introduction-water.wxml-->
+<view><image src='/pages/resouse/humidity.png' class='image'></image>
+<view class='tittle'>水对头发的影响</view></view>
+<view class="word"><text>{{text1}}</text><text class="number">{{text2}}</text><view>{{text3}}</view></view>
+<button  bindtap='shuizhi' class='button'>测测水质吧</button>

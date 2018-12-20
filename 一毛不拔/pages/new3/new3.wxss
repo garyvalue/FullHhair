@@ -1,0 +1,63 @@
+/* pages/new3/new3.wxss */
+.canvas{
+  width: 100%;
+  height: 400rpx
+}
+
+#chart1{
+  top: 260rpx
+}
+ #text{
+  color: #47861d;
+  font-family:PingFangSC-Regular;
+  font-size:13px;
+  top: 50%;
+  left: 20%;
+  position: absolute
+  }
+  /* pages/new4/new4.wxss */
+
+.btn1{
+  width: 90%;
+  top: 9%
+}
+
+.radio-group{
+  left: 30%;
+  top: 30%;
+  position: absolute
+}
+
+#input{
+  background-color:#EBEBE3;
+  width: 60%;
+  height: 99rpx;
+  top: 55%;
+  left: 18%;
+  position: absolute
+  }
+
+  #text{
+  color: #888888;
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  top: 55%;
+  left: 17%;
+  position: absolute
+  }
+
+  #btn3{
+  margin-top: 280px;
+font-size: 20px;
+
+  width: 80%;
+
+  background-color: rgb(116,180,155);
+
+  color:white;
+
+  border-radius: 98rpx;
+
+  background: bg_red;
+
+  }

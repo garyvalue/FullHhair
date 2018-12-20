@@ -1,0 +1,7 @@
+<!--pages/new2/new2.wxml-->
+<view class='tittle'>水的硬度对头发的影响</view>
+<view>
+<view class='word'>{{text1}}</view><view class='number'>{{text2}}</view><view class='word1'>{{text3}}</view>
+</view>
+<button id="btn3" bindtap="getDataFromOneNet">Next
+</button>

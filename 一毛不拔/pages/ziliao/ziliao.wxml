@@ -1,0 +1,8 @@
+<!--pages/ziliao/ziliao.wxml-->
+<view class='text'>生理性别</view>
+<radio-group  class="radio-group" bindchange="radioChange">
+  <label class="radio"  wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+<button bindtap='next' class="button">next</button>

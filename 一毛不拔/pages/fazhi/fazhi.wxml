@@ -1,0 +1,9 @@
+<canvas class = "canvas" id="chart1"
+canvas-id="FSR"></canvas>
+<text id="text">提示：请记住最后一个平稳的峰值 </text>
+<input id="input" placeholder="输入测得的峰值" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change"/>
+  <button id="btn3" style="opacity: {{opacity}}" 
+disabled="{{disabled}}" bindtap="send">发送请求</button>

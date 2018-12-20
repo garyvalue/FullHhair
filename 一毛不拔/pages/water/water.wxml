@@ -1,0 +1,15 @@
+<!--pages/water/water.wxml-->
+<view class="tittle">您来自哪个地区？</view>
+<form>
+<radio-group class="radio-group" bindchange="convey1">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</radio-group>
+</form>
+<view class='text' >由于时间有限，所以只支持海河流域的ph查看</view>
+<button  class="button" bindtap="yes" >确定</button>
+<view hidden='{{hid1}}'class="text1">北京地区水的ph是{{newsItem["北京密云古北口"].ph}}</view>
+<view hidden='{{hid2}}'class="text1">天津地区水的ph是{{newsItem["天津果河桥"].ph}}</view>
+<view hidden='{{hid3}}'class="text1">河北地区的ph是{{newsItem["河北石家庄港南水库"].ph}}</view>
+<button bindtap='next' class="button1">next</button>

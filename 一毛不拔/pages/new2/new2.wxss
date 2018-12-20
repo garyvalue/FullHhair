@@ -1,0 +1,86 @@
+/* pages/new2/new2.wxss */
+/* start.wxss */
+.radio-group{
+  left: 30%;
+  top: 30%;
+  position: absolute
+}
+
+#input{
+  background-color: #e5e5e5;
+  width: 60%;
+  height: 88rpx;
+  top: 45%;
+  left: 18%;
+  position: absolute
+  }
+
+  #text{
+  color: #888888;
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  top: 55%;
+  left: 17%;
+  position: absolute
+  }
+
+  #btn3{
+margin-top: 30px;
+font-size: 20px;
+
+  width: 80%;
+
+  background-color: rgb(116,180,155);
+
+  color:white;
+
+  border-radius: 98rpx;
+
+  background: bg_red;
+
+}
+.word{
+  margin-left: 20px;
+  width: 90%;
+  margin-top: 30px;
+  color:rgb(43,43,40);
+  line-height: 45px;
+  font-size: 25px;
+  letter-spacing:7rpx;
+}
+  #text1{
+  color: #00aea1;
+  font-family:PingFangSC-Regular;
+  font-size:18px;
+  top: 8%;
+  left: 20%;
+  position: absolute
+  }
+  #text2{
+  color: #183ad16e;
+  font-family:PingFangSC-Regular;
+  font-size:16px;
+  top: 18%;
+  left: 28%;
+  position: absolute
+  }
+  .number{
+  width: 90%;
+  margin-left: 20px;
+  font-size: 30px;
+  color: rgb(183,53,53)
+}
+.tittle{
+margin-top: 30px;
+margin-left: 10px;
+font-size: 35px;
+}
+.word1{
+  margin-left: 20px;
+  width: 90%;
+  margin-top: 15px;
+  color:rgb(43,43,40);
+  line-height: 45px;
+  font-size: 25px;
+  letter-spacing:9rpx;
+}

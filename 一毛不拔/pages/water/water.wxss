@@ -1,0 +1,39 @@
+/* pages/water/water.wxss */
+.radio{
+  font-size: 25px;
+  margin-top: 40px;
+  size: 40px;
+  margin-left:120px;
+  display: flex;
+}
+.button{
+margin-top: 20px;
+font-size: 20px;
+
+  width: 80%;
+
+  background-color: rgb(116,180,155);
+
+  color:white;
+
+  border-radius: 98rpx;
+
+  background: bg_red;
+
+}
+.text{
+  font:15px;
+}
+.text1{
+  font-size: 25px;
+  color: rgb(42,97,113);
+  margin-left: 40px;
+}
+.button1{
+  width: 30%;
+  color: white;
+  background-color: rgb(116,180,155);
+  border-radius: 1000rpx;
+  margin-top: 10px;
+
+}

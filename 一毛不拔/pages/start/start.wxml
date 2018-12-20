@@ -1,0 +1,11 @@
+<!--start.wxml-->
+<view class="word1">头发的种类：头发的质地根据其物理特点可分为钢发、绵发、油发、沙发、卷发五种。</view>
+<view class="word">钢发： 比较粗硬，生长稠密，含水量也较多，有弹性，弹力也稳固。</view>
+<view class="word">绵发： 比较细软的头发，缺少硬度，弹性较差。</view>
+<view class="word">油发： 这种头发油质较多，弹性较强，抵抗力强，弹性不稳定。</view>
+<view class="word">沙发： 缺乏油脂，含水量少。</view>
+<view class="word">卷发： 弯曲丛生，软如羊毛。</view>
+<button class="button" bindtap="getDataFromOneNet">
+快来看看你的发质吧</button>
+
+

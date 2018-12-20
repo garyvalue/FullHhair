@@ -1,0 +1,10 @@
+<!--pages/new3/new3.wxml-->
+
+<canvas class = "canvas" id="chart1"
+canvas-id="TDS"></canvas>
+<input id="input" placeholder="请输入最后一个稳定的峰值" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change"/>
+  <button id="btn3" style="opacity: {{opacity}}" 
+disabled="{{disabled}}" bindtap="send">发送请求</button>

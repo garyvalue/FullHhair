@@ -1,0 +1,11 @@
+<!--pages/result/result.wxml-->
+<view class="tittle">发质成绩大汇总</view>
+<view class="tittle1">基因板块，您得到的评价是:</view>
+<view class='text'>{{gene1}}</view>
+<view class="tittle1">水质板块，您得到的分数是:{{shuizhi}}分</view>
+<view class="tittle1">发质板块，您得到的分数是:{{fazhi}}分</view>
+<view class='radarContainer'>
+<canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
+</view>
+<view> </view>
+<view class='tittle2'>您的总得分是：{{score}}分</view>

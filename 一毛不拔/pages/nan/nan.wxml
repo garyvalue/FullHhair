@@ -1,0 +1,49 @@
+<view class='tittle'>你的家人秃吗？</view>
+<view class="text">为了提高结果的准确性，请务必填写完整，否则默认为家人为“秃”</view>
+<form>
+<view class='form'>
+<view class='tt'>你祖父秃吗?</view>
+<radio-group class="radio-group" bindchange="convey1">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+<view class='tt'>你祖母秃吗?</view>
+<radio-group class="radio-group" bindchange="convey2">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+
+<view class='tt'>你外祖父秃吗?</view>
+<radio-group class="radio-group" bindchange="convey3">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+
+<view class='tt' >你外祖母秃吗?</view>
+<radio-group class="radio-group" bindchange="convey4">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+
+<view class='tt'>你父亲秃吗?</view>
+<radio-group class="radio-group" bindchange="convey5">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+
+<view class='tt'>你母亲秃吗?</view>
+<radio-group class="radio-group" bindchange="convey6">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+</view>
+<button class='button'bindtap='result' form-type='submit'>提交</button>
+</form>
+<view hidden='{{hid}}' class='text'>{{result}}</view>
+<button  bindtap='next' class="button1" hidden='{{hid}}'>next</button>
