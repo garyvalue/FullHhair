@@ -1,9 +1,7 @@
 # FullHhair
-一毛不拔——基于秃头问题的微信小程序
-文件夹pages为主要代码
-由于编写人员不同，导致页面命名规则不一致在此特作说明
-基因板块主要代码在pages/nan和pages/nv中
-水质板块ph页面代码主要在pages/introduce-water和water中
-水质板块tds页面代码主要在pages/new2和new3中
-发质板块主要代码在pages/fazhi和pages/start中
-综合评价板块代码在pages/result页面
+一毛不拔——基于秃头问题的微信小程序，文件夹pages为主要代码。由于编写人员不同，导致页面命名规则不一致在此特作说明：
+①基因板块主要代码在pages/nan和pages/nv中
+②水质板块ph页面代码主要在pages/introduce-water和water中
+③水质板块tds页面代码主要在pages/new2和new3中
+④发质板块主要代码在pages/fazhi和pages/start中
+⑤综合评价板块代码在pages/result页面
