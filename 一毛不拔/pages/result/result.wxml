@@ -8,4 +8,4 @@
 <canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
 </view>
 <view> </view>
-<view class='tittle2'>您的总得分是：{{score}}分</view>
+<view class="tittle2">您的总得分是：{{score}}分</view>

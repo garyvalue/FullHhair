@@ -45,5 +45,3 @@
 </view>
 <button class='button'bindtap='result' form-type='submit'>提交</button>
 </form>
-<view hidden='{{hid}}' class='text'>{{result}}</view>
-<button  bindtap='next' class="button1" hidden='{{hid}}'>next</button>

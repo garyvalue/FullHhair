@@ -1,0 +1,10 @@
+<!--pages/ziliao/ziliao.wxml-->
+<view class='text'>生理性别</view>
+<radio-group  class="radio-group" bindchange="radioChange">
+  <label class="radio"  wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+<view class='age'>年龄</view>
+<input name="age" value='{{input}}'bindinput='age' placeholder-class='content' class='input-box' placeholder="请输入您的年龄 例：25"/>
+<button bindtap='next' class="button">next</button>

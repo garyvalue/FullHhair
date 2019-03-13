@@ -1,73 +1,146 @@
+
 /* pages/nv/nv.wxss */
+
 .form{
+
+
 
 width:750rpx;  
 
+
+
 height:800rpx; 
+
+
 
 display:flex;  
 
+
+
 flex-direction:column; 
 
+
+
 justify-content:space-around;
+
+
 
 align-items: enter;
 
 
+
+
+
 }
+
 .input-box{
+
+
 
 border: 1px solid black;  
 
+
+
 margin-bottom: 15px;
+
 margin-top: 15px;
 
+
+
 }
+
+
 
 .checkbox{
 
+
+
 width:85%;  
+
 }
+
+
 
 .checkbox_hint{
 
+
+
 margin-bottom:40rpx  
+
 }
+
 .radio{
+
   margin-top: 20px;
+
   size: 20px;
+
   font-size: 20px;
+
   margin-left: 80px;
+
   color: rgb(32,113,106)
+
 }
+
 .tt{
+
   font-size: 20px;
+
   margin-left: 80px;
+
  color: rgb(70,101,81)
+
 }
+
 .button{
+
 margin-top: 20px;
+
 font-size: 20px;
+
+
 
   width: 80%;
 
+
+
   background-color: rgb(116,180,155);
+
+
 
   color:white;
 
+
+
   border-radius: 98rpx;
+
+
 
   background: bg_red;
 
-}
-.button1{
-  width: 30%;
-  color: white;
-  background-color: rgb(116,180,155);
-  border-radius: 1000rpx;
-  margin-top: 10px;
+
 
 }
+
+.button1{
+
+  width: 30%;
+
+  color: white;
+
+  background-color: rgb(116,180,155);
+
+  border-radius: 1000rpx;
+
+  margin-top: 10px;
+
+
+
+}
+
 .text{
+
   color: rgb(38,54,70)
+
 }

@@ -53,7 +53,7 @@ Page({
   },
   enter:function(){
   wx.navigateTo({
-    url: '/pages/ziliao/ziliao',
+    url: '/pages/age-sex/age-sex',
   })
   }
 })

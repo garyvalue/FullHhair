@@ -2,9 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/ziliao/ziliao",
+    "pages/age-sex/age-sex",
     "pages/nv/nv",
-    "pages/nan/nan",
     "pages/water/water",
     "pages/introduce-water/introduction-water",
     "pages/start/start",

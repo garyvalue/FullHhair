@@ -1,0 +1,51 @@
+/* pages/ziliao/ziliao.wxss */
+.radio-group{
+display: flex;
+align-items: center;
+margin-right: 10px;
+margin-top: 10px;
+}
+.text{
+  color: rgb(54,140,114);
+  font-size: 40px;
+  margin-left:120px;
+    margin-top: 100px;
+}
+.radio{
+  margin-top: 30px;
+  margin-left: 65px;
+  font-size: 25px;
+  color: rgb(70,101,81)
+}
+.button{
+margin-top: 70px;
+font-size: 20px;
+
+  width: 60%;
+
+  background-color: rgb(116,180,155);
+
+  color:white;
+
+  border-radius: 98rpx;
+
+  background: bg_red;
+
+}
+.age{
+   color: rgb(54,140,114);
+   font-size: 40px;
+   margin-left:150px;
+    margin-top: 60px;
+}
+.input-box{
+height: 40px;
+width: 70%;
+margin-left: 70px;
+border: 1px solid rgb(54,140,114);  
+margin-top: 80rpx  
+
+}
+.content{
+  margin-left: 30px;
+}

@@ -13,7 +13,8 @@ Page({
   shuizhi:"",
   fazhi:"",
   gene:"",
-  score:''
+  score:'',
+  age:""
   },
  
   /**
@@ -23,19 +24,20 @@ Page({
     var self=this;
 self.setData({
   gene1: wx.getStorageSync('result'),
+  age: wx.getStorageSync('age_score'),
   shuizhi: Math.ceil(wx.getStorageSync('shuizhi')),
   fazhi: Math.ceil(wx.getStorageSync('fazhi')),
   gene: Math.ceil(wx.getStorageSync('gene')),
   score: Math.ceil(wx.getStorageSync('gene') * 0.4 + Math.ceil(wx.getStorageSync('shuizhi')) * 0.3 + Math.ceil(wx.getStorageSync('fazhi'))*0.3),
 })
-console.log(self.data.gene)
+    console.log(self.data.age)
   RadarChart_result = new myCharts({
       canvasId: 'radarCanvas',
       type: 'radar',
-      categories: ["基因", "水质","发质"],
+      categories: ["基因", "水质","发质","年龄"],
       series: [{
         name: '综合情况',
-        data: [this.data.gene, this.data.shuizhi, this.data.fazhi]
+        data: [this.data.gene, this.data.shuizhi, this.data.fazhi,this.data.age]
       }],
       width: 400,
       height: 300,
@@ -47,7 +49,7 @@ console.log(self.data.gene)
     })
 
   },
-
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

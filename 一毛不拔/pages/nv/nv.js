@@ -20,6 +20,7 @@ Page({
     gene:'',
     result:'糟糕，你可能会秃😭',
     hid:true,
+    sex:"",
   },
   next:function(){
     var that=this;
@@ -69,7 +70,13 @@ Page({
   },
 
   result:function(){
-    var that=this;
+    var that = this;
+    that.setData({
+      sex:wx.getStorageSync("sex")
+    })
+    console.log(that.data.sex)
+    if(that.data.sex=="woman"){
+
     if(that.data.father=="不秃"){
     that.setData({
       result:"恭喜你呀，从基因来看，你不会秃啊！",
@@ -190,17 +197,117 @@ Page({
       }
 
     }
+    }
+    else if(that.data.sex=="man"){
+      //妈妈秃，爸爸不秃 
+      if (that.data.mother == "秃")
+        that.setData({
+          result: "糟糕，从基因上看，你秃头的概率是100%，要好好爱护头发啊",
+          gene: 0,
+        })
+      //妈妈不秃，爸爸不秃
+      else if (that.data.mother == "不秃" && that.data.father == "不秃") {
+        if (that.data.m_pa == "秃" && that.data.m_ma == "不秃")
+          that.setData({
+            result: "从基因看，你秃头的概率是42.9%，要注意啊",
+            gene: 57.1,
+          })
+        else if (that.data.m_pa == "不秃" && that.data.m_ma == "秃")
+          that.setData({
+            result: "从基因看，你秃头的概率是50%，要注意啊",
+            gene: 50,
+          })
+        else if (that.data.m_pa == "秃" && that.data.m_ma == "秃")
+          that.setData({
+            result: "从基因看，你秃头的概率是87.5%，要注意啊",
+            gene: 12.5,
+          })
+        else if (that.data.m_pa == "不秃" && that.data.m_ma == "不秃")
+          that.setData({
+            result: "从基因看，你秃头的概率是12.5%，要注意啊",
+            gene: 87.5
+          })
+      }
+      //爸爸秃，妈不秃
+      else if (that.data.mother == "不秃" && that.data.father == "秃") {
+        if (that.data.m_pa == "秃" && that.data.m_ma == "不秃") {
+          if (that.data.f_pa == "秃" && that.data.f_ma == "不秃")
+            that.setData({
+              result: "从基因看，你秃头的概率是88.6%，要注意啊",
+              gene: 11.4
+            })
+          else if (that.data.f_pa == "不秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是71.4%，要注意啊",
+            gene: 28.6
+          })
+          else if (that.data.f_pa == "秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是92.8%，珍惜相聚的时光",
+            gene: 7.3
+          })
+          else if (that.data.f_pa == "不秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是71.4%，要注意啊",
+            gene: 28.6
+          })
+        }
+        else if (that.data.m_ma == "秃") {
+          if (that.data.f_pa == "秃" && that.data.f_ma == "不秃")
+            that.setData({
+              result: "从基因看，你秃头的概率是90%，要注意啊",
+              gene: 10,
+            })
+          else if (that.data.f_pa == "不秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是75%，要注意啊",
+            gene: 25,
+          })
+          else if (that.data.f_pa == "秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是93.8%，要注意啊",
+            gene: 6.2,
+          })
+          else if (that.data.f_pa == "不秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是75%，要注意啊",
+            gene: 25
+          })
+        }
+        //
+        else if (that.data.m_pa == "不秃" && that.data.m_ma == "不秃") {
+          if (that.data.f_pa == "秃" && that.data.f_ma == "不秃")
+            that.setData({
+              result: "从基因看，你秃头的概率是82.5%，要注意啊",
+              gene: 17.5
+            })
+          else if (that.data.f_pa == "不秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是56.3%，要注意啊",
+            gene: 43.7
+          })
+          else if (that.data.f_pa == "秃" && that.data.f_ma == "秃") that.setData({
+            result: "从基因看，你秃头的概率是89.1%，要注意啊",
+            gene: 10.9
+          })
+          else if (that.data.f_pa == "不秃" && that.data.f_ma == "不秃") that.setData({
+            result: "从基因看，你秃头的概率是56.3%，要注意啊",
+            gene: 43.7
+          })
+        }
+      }
+      
+    }
 
     wx.showModal({
       title: '提示',
-      content: "准备好看结果了吗？",
+      content: that.data.result,
       success: function (res) {
         if (res.confirm) {
-          that.setData({
-            hid:false
-          })  
+          wx.navigateTo({
+            url: '/pages/introduce-water/introduction-water',
+          })
+          var result = that.data.result;
+          wx.setStorageSync('result', that.data.result);
+          var gene = that.data.gene;
+          wx.setStorageSync('gene', that.data.gene);
           console.log('用户点击确定')
-        } else if (res.cancel) {
+          console.log(that.data.sex)
+        } 
+        else if (res.cancel) {
           console.log('用户点击取消')
         }
       }
